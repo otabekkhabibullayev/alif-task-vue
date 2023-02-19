@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #FD8451, #FFBD6F);
+}
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    padding: 120px 0;
+}
+
+.table-top {
+    display: flex;
+    margin: 0 -12px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.table-top-item {
+    max-width: 50%;
+    flex: 50%;
+    padding: 0 12px;
+}
+
+.table-top-item input {
+    width: 100%;
+    height: 36px;
+    outline: none;
+    padding: 12px;
+}
+
+.table-top-item .ant-select {
+    width: 100%;
+}
+
+.edit {
+    padding-top: 120px;
+}
+
+.edit-main {
+    margin-bottom: 60px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.detail {
+    padding-top: 120px;
+}
+
+.detail-main {
+    background-color: #fff;
+    padding: 48px;
+    border-radius: 8px;
+}
+
+.card {
+    margin-bottom: 60px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card span {
+    font-size: 22px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.card small {
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.card button {
+    display: inline-block;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    border: 0;
+    color: #fff;
+    outline: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.detail-main ol {
+    margin: -24px 0;
+}
+
+.detail-main ol li {
+    padding: 24px 0;
+}
+
+.table-top-item button {
+    display: block;
+    margin-left: auto;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    border: 0;
+    color: #fff;
+    outline: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.form button {
+    display: inline-block;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+    border: 0;
+    color: #fff;
+    outline: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.form {
+    margin: -12px 0;
+}
+
+.form-textarea,
+.form-select,
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+
+.form-textarea span,
+.form-select span,
+.form-input span {
+    color: red;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.invalid {
+    border-color: red !important;
+}
+
+.form-input input,
+.form-select select {
+    outline: none;
+    border: 1px solid #999;
+    padding: 12px;
+}
+
+.form-textarea textarea {
+    height: 150px !important;
+    resize: none;
+    outline: none;
+    padding: 12px;
+    border: 1px solid #999;
+}
+
+.form small {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: black;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table._2 {
+    border: 1px solid #efefef;
+    border-radius: 8px;
+}
+
+.table._2 table tbody td {
+    border-color: #efefef;
+}
+
+.table-empty {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-empty .svg {
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.table-empty .svg svg {
+    stroke: #938ca5;
+    width: 24px;
+    height: 24px;
+}
+
+.table-empty span {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #898989;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table table thead {
+    background: #f4f6ff;
+    padding: 0 16px;
+}
+
+.table table thead tr {
+    width: 1%;
+}
+
+.table table thead tr th {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #938ca5;
+    padding: 10px 16px;
+    text-align: start;
+}
+
+.table table thead tr th:first-child {
+    width: 88px;
+}
+
+.table table thead tr th .ant-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table table thead tr th .ant-checkbox+span {
+    padding: 0;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #938ca5;
+}
+
+.table table thead tr th .ant-checkbox {
+    top: 0;
+}
+
+.table table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table table tbody tr tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table table tbody tr tbody tr button {
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+    width: 1;
+}
+
+.table table tbody tr tbody tr button:disabled {
+    cursor: not-allowed;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.table table tbody tr tbody tr td {
+    border-bottom: 1px solid #ebebeb;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #313131;
+}
+
+.table table tbody tr tbody tr td img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.table table tbody tr tbody tr td:first-child {
+    width: 80px;
+}
+
+.table table tbody tr tbody tr td:last-child {
+    width: 1%;
+}
+
+.table table tbody tr tbody tr td .ant-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table table tbody tr tbody tr td .ant-checkbox+span {
+    padding: 0;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #313131;
+}
+
+.table table tbody tr tbody tr td .ant-checkbox {
+    top: 0;
+}
+
+.table table tbody tr td {
+    border-bottom: 1px solid #ebebeb;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #313131;
+    background-color: white;
+}
+
+.table table tbody tr td img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.table table tbody tr td:first-child {
+    width: 80px;
+}
+
+.table table tbody tr td .ant-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table table tbody tr td .ant-checkbox+span {
+    padding: 0;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #313131;
+}
+
+.table table tbody tr td .ant-checkbox {
+    top: 0;
+}
+
+.table table tbody tr td i.anticon-close-circle,
+.table table tbody tr td i.anticon-check-circle {
+    font-size: 24px;
+    color: #ec3751;
+}
+
+.table table tbody tr td i.anticon-check-circle {
+    color: darkgreen;
+}
+
+.table table tbody tr td .ant-switch-checked::after {
+    margin-left: -2px;
+}
+
+.table-action {
+    display: flex;
+    align-items: center;
+}
+
+.table-action span {
+    font-size: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-action span:not(:last-child) {
+    margin-right: 8px;
+}
+
+.table-flex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-flex .svg {
+    margin-right: 6px;
+}
+
+.table-flex .svg svg {
+    width: 20px;
+    height: 20px;
+    fill: #3b96ef;
+}
+
+.table-popup {
+    display: flex;
+    align-items: center;
+    max-width: 460px;
+    width: 100%;
+    background: #f3f3f3;
+    border-radius: 65px;
+    padding: 16px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table-popup>.svg {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.table-popup>.svg svg {
+    width: 20px;
+    height: 20px;
+    fill: #cacaca;
+}
+
+.table-popup>span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #313131;
+    display: flex;
+    align-items: center;
+}
+
+.table-popup>span small {
+    width: 33px;
+    height: 20px;
+    background: #e8e8e8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.table-popup .ant-btn {
+    margin-left: auto;
+    background: #ec3751;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: #ec3751;
+}
+
+.table-popup .ant-btn .svg {
+    margin-right: 4px;
+}
+
+.table-popup .ant-btn .svg svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+.table-popup .ant-btn span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.employee-come {
+    margin-top: 25px;
+}
+
+.employee-come .btn-day-add {
+    padding: 8px 12px;
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
+.employee-come .btn-day-add:disabled .svg svg {
+    stroke: #c7c6c6;
+}
+
+.employee-come .btn-day-add .svg svg {
+    stroke: white;
+    fill: white;
+}
+
+.employee-come .btn-day-delete {
+    margin-left: auto;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    height: 48px;
+    width: 48px;
+}
+
+.employee-come .btn-day-delete:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.employee-come .btn-day-delete .svg {
+    margin-right: 0;
+    font-size: 24px;
+}
+
+.employee-come .btn-day-delete .svg svg {
+    fill: red;
+    width: 24px;
+    height: 20px;
+}
+
+.table h3 {
+    text-align: center;
+}

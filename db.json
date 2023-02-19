@@ -1,0 +1,57 @@
+{
+  "list": [
+    {
+      "author": "Shadiko",
+      "content": "You look like my favorite color. ",
+      "genre": "Драма",
+      "createdDate": "13:20",
+      "views": 10,
+      "id": 6,
+      "updatedDate": "13:51"
+    },
+    {
+      "author": "Shadiko",
+      "content": "Твоя каждая улыбка придает еще больше шарма весне.  Улыбайся! 🙃",
+      "genre": "Лирика",
+      "createdDate": "00:35",
+      "views": 3,
+      "id": 8,
+      "updatedDate": "20:05"
+    },
+    {
+      "author": "Otabek",
+      "content": "Хочу кушать",
+      "genre": "Лирика",
+      "createdDate": "13:21",
+      "views": 7,
+      "id": 9
+    },
+    {
+      "author": "Sardor",
+      "content": "Купи камеру",
+      "genre": "Эпос",
+      "createdDate": "13:54",
+      "updatedDate": null,
+      "views": 5,
+      "id": 11
+    },
+    {
+      "author": "Otabek",
+      "content": "Hello it works",
+      "genre": "Лирика",
+      "createdDate": "16:44",
+      "updatedDate": null,
+      "views": 1,
+      "id": 12
+    },
+    {
+      "author": "Отабек",
+      "content": "Почему врать не хочется, но надо  ",
+      "genre": "Лирика",
+      "createdDate": "18:19",
+      "updatedDate": null,
+      "views": 1,
+      "id": 13
+    }
+  ]
+}
