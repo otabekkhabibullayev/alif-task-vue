@@ -1,0 +1,57 @@
+@media (max-width: 1460px) {
+    .container {
+        max-width: 1260px;
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .card h3 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .card h3 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .card span {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .container {
+        max-width: 100%;
+    }
+
+}

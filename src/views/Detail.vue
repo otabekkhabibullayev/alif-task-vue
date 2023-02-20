@@ -1,30 +1,29 @@
 <template>
   <div class="detail">
-    <div class="container">
-      <div class="detail-main">
-        <ol>
-          <li>
-            <h4>Автор</h4>
-            <span>{{ detail.author }}</span>
-          </li>
-          <li>
-            <h4>Жанры</h4>
-            <span>{{ detail.genre }}</span>
-          </li>
-          <li>
-            <h4>Время создания</h4>
-            <span>{{ detail.createdDate }}</span>
-          </li>
-          <li>
-            <h4>Цитата</h4>
-            <span>{{ detail.content }}</span>
-          </li>
-          <li>
-            <h4>Просмотов</h4>
-            <span>{{ detail.views }}</span>
-          </li>
-        </ol>
-      </div>
+
+    <div class="detail-main">
+      <ol>
+        <li>
+          <h4>Автор</h4>
+          <span>{{ detail.author }}</span>
+        </li>
+        <li>
+          <h4>Жанры</h4>
+          <span>{{ detail.genre }}</span>
+        </li>
+        <li>
+          <h4>Время создания</h4>
+          <span>{{ detail.createdDate }}</span>
+        </li>
+        <li>
+          <h4>Цитата</h4>
+          <span>{{ detail.content }}</span>
+        </li>
+        <li>
+          <h4>Просмотов</h4>
+          <span>{{ detail.views }}</span>
+        </li>
+      </ol>
     </div>
   </div>
 </template>
@@ -63,9 +62,9 @@ export default {
   computed: {
     ...mapGetters(["detail"]),
   },
- async mounted() {
-   await this.getListSlug(this.$route.params.id);
-   await this.updateViewsCount(this.$route.params.id)
+  async mounted() {
+    await this.getListSlug(this.$route.params.id);
+    await this.updateViewsCount(this.$route.params.id)
   },
 };
 </script>

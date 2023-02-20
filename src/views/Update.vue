@@ -1,6 +1,5 @@
 <template>
   <div class="edit">
-    <div class="container">
       <div class="edit-main">
         <div class="edit-title">
           <h3>Обновить цитату</h3>
@@ -29,7 +28,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
